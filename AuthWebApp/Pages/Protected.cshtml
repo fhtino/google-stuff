@@ -1,0 +1,44 @@
+﻿@page
+@using System.Security.Claims;
+@model AuthWebApp.Pages.ProtectedModel
+@{
+}
+<h2>Protected page</h2>
+<br />
+Current user information:
+<br />
+<table border="0" cellpadding="10" style="font-size:smaller; background-color:#daf0dc;">
+    <tr>
+        <td valign="top">
+            <table border="1" cellpadding="3">
+                <tr><td>IsAuthenticated:</td><td>@User.Identity.IsAuthenticated</td></tr>
+                <tr><td>GivenName:</td><td>@User.FindFirst(ClaimTypes.GivenName)?.Value</td></tr>
+                <tr><td>Surname:</td><td>@User.FindFirst(ClaimTypes.Surname)?.Value</td></tr>
+                <tr><td>Email:</td><td>@User.FindFirst(ClaimTypes.Email)?.Value</td></tr>
+                <tr><td>Name:</td><td>@User.FindFirst(ClaimTypes.Name)?.Value</td></tr>
+                <tr><td>nameidentifier:</td><td>@User.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value</td></tr>
+            </table>
+        </td>
+        <td valign="top">
+            Scopes [@Model.CurrentUserScopes?.Count]:<br />
+            @if (@Model.CurrentUserScopes != null)
+            {
+                <ul>
+                    @foreach (var scope in Model.CurrentUserScopes)
+                    {
+                        <li>@scope</li>
+                    }
+                </ul>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <ul>
+                <li>RefreshToken = @Model.CurrentRefreshToken</li>
+                <li>AccessToken = @Model.CurrentAccessToken</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br />

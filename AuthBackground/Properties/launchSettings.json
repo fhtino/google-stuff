@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AuthBackground": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "CLIENT_SECRET_FILENAME_PATH": "../../../../../ClientWeb_secrets.json",
+        "DEMOSTORAGE_FILENAME": "../../../../../demostore.json"
+      }
+    }
+  }
+}

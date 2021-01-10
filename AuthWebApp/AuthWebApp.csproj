@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.49.0" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.49.0.2170" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.49.0.2194" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuthCommonLib\AuthCommonLib.csproj" />
+  </ItemGroup>
+
 </Project>

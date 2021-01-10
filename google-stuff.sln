@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthWebApp", "AuthWebApp\AuthWebApp.csproj", "{0E652478-C1F4-49DA-A33F-6EF50F9B1600}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthWebApp", "AuthWebApp\AuthWebApp.csproj", "{0E652478-C1F4-49DA-A33F-6EF50F9B1600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthBackground", "AuthBackground\AuthBackground.csproj", "{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthBackground", "AuthBackground\AuthBackground.csproj", "{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthCommonLib", "AuthCommonLib\AuthCommonLib.csproj", "{55E2FA42-5096-4A19-8B87-CEBD2BC774D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03BDBD4B-B8C3-471B-A3BB-C2242E2C4D83}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E2FA42-5096-4A19-8B87-CEBD2BC774D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E2FA42-5096-4A19-8B87-CEBD2BC774D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E2FA42-5096-4A19-8B87-CEBD2BC774D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E2FA42-5096-4A19-8B87-CEBD2BC774D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,39 @@
+﻿@page
+@model AuthWebApp.Pages.PersonalDataModel
+@{
+}
+<h2>Personal data</h2>
+This page is protected and shows data from Google Drive and Calendar
+<br />
+<br />
+
+<strong>Google Drive files</strong>
+@if (@Model.DriveFiles != null)
+{
+    <table border="1" cellpadding="2" cellspacing="0" style="font-size:80%;">
+        @foreach (var file in Model.DriveFiles.Take(5))
+        {
+            <tr>
+                <td>@file.Name</td>
+                <td>@file.ModifiedTime</td>
+            </tr>
+        }
+    </table>
+}
+<br />
+
+<strong>Google Calendars</strong>
+@if (Model.Calendars != null)
+{
+    <table border="1" cellpadding="2" cellspacing="0" style="font-size:80%;">
+        @foreach (var calendar in Model.Calendars.Take(5))
+        {
+            <tr>
+                <td>@calendar.Id</td>
+                <td>@calendar.Description</td>
+            </tr>
+        }
+    </table>
+}
+
+
