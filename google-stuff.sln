@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthWebApp", "AuthWebApp\AuthWebApp.csproj", "{0E652478-C1F4-49DA-A33F-6EF50F9B1600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthBackground", "AuthBackground\AuthBackground.csproj", "{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E652478-C1F4-49DA-A33F-6EF50F9B1600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E652478-C1F4-49DA-A33F-6EF50F9B1600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E652478-C1F4-49DA-A33F-6EF50F9B1600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E652478-C1F4-49DA-A33F-6EF50F9B1600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AB9EDD-6606-4882-8779-B34D7D7DC95F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8EC8504-6516-40FF-B740-4D3057921211}
+	EndGlobalSection
+EndGlobal
